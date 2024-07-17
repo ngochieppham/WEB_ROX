@@ -446,7 +446,7 @@ a {
 
 .column-block-bottom-right {
     display: flex;
-    width: 177px;
+    width: 50%;
     justify-content: center;
     align-items: center;
     gap: 3.627px;
@@ -454,7 +454,7 @@ a {
 
 .column-block-bottom-left {
     display: flex;
-    width: 279px;
+    width: 38%;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -875,6 +875,14 @@ a {
 
     .block-column-right-bottom {
         display: inline-block;
+    }
+
+    .column-block-bottom-left {
+        width: 100%;
+    }
+
+    .column-block-bottom-right {
+        justify-content: flex-start;
     }
 }
 
