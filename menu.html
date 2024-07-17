@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .menu-event {
+        display: flex;
+        width: 100%;
+        padding: 16.571px 0px 16.571px 1166.2px;
+        justify-content: flex-end;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.80);
+    }
+
+    .menu-box {
+        display: flex;
+        padding: 32px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 32px;
+        border-radius: 16px;
+        background: rgba(0, 0, 0, 0.00);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+    }
+
+    .box-menu-top {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    .in-menu-top {
+        display: flex;
+        width: 209px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    .in-menu-top-left {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .menu-icon-search {
+        display: flex;
+        padding: 7.771px;
+        align-items: flex-start;
+        gap: 3.886px;
+    }
+
+    .menu-icon-globe {
+        display: flex;
+        padding: 7.771px;
+        align-items: center;
+        gap: 7.771px;
+    }
+
+    .text-globe {
+        color: var(--Neutral-200, #D9D9D9);
+        text-align: center;
+        font-family: "Public Sans";
+        font-size: 13.6px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 13.6px;
+        /* 100% */
+    }
+
+    .in-menu-top-right {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .text-menu-top-right {
+        color: var(--Neutral-200, #D9D9D9);
+        /* Large/Bold */
+        font-family: Calibri;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        /* 144.444% */
+        letter-spacing: 0.09px;
+    }
+
+    .box-menu-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 8px;
+    }
+
+    .text-bottom {
+        display: flex;
+        height: 52px;
+        padding: 28.383px 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 9.461px;
+    }
+
+    .line-menu {
+        width: 41px;
+        height: 1px;
+        background: #636669;
+    }
+
+    .page {
+        color: var(--Neutral-100, #EFF0F0);
+        text-align: center;
+        font-family: Calibri;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        /* 133.333% */
+        text-transform: uppercase;
+    }
+
+    .box-menu-dark {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 4px;
+    }
+
+    .text-about {
+        color: var(--Neutral-200, #D9D9D9);
+        text-align: right;
+        font-family: Calibri;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 150% */
+    }
+
+    .form-login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 16px;
+        align-self: stretch;
+    }
+
+    .line-login {
+        width: 209px;
+        height: 1px;
+        background: #636669;
+    }
+
+    .box-login {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .in-box-login {
+        display: flex;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 9.714px;
+        border-radius: 8px;
+        border: 1px solid var(--Neutral-200, #D9D9D9);
+    }
+
+    .icon-user {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .text-login {
+        color: var(--Neutral-100, #EFF0F0);
+        text-align: center;
+        font-family: Calibri;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 142.857% */
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0px;
+    }
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div class="menu-event">
+        <div class="menu-box">
+            <div class="box-menu-top">
+                <div class="in-menu-top">
+                    <div class="in-menu-top-left">
+                        <a href="#" type="button" class="menu-icon-search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23.314px" height="23.314px"
+                                viewBox="0 0 25 24" fill="none">
+                                <path
+                                    d="M21.3714 20.7426L17.1457 16.5168M19.4286 11.0283C19.4286 15.3203 15.9492 18.7997 11.6572 18.7997C7.36513 18.7997 3.88574 15.3203 3.88574 11.0283C3.88574 6.73622 7.36513 3.25684 11.6572 3.25684C15.9492 3.25684 19.4286 6.73622 19.4286 11.0283Z"
+                                    stroke="#D9D9D9" stroke-width="1.45714" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <button type="button" class="menu-icon-globe">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23.314px" height="23.314px"
+                                viewBox="0 0 25 24" fill="none">
+                                <path
+                                    d="M22.2001 11.9999C22.2001 17.365 17.8508 21.7142 12.4858 21.7142M22.2001 11.9999C22.2001 6.63488 17.8508 2.28564 12.4858 2.28564M22.2001 11.9999H2.77148M12.4858 21.7142C7.12072 21.7142 2.77148 17.365 2.77148 11.9999M12.4858 21.7142C14.9156 19.0541 16.2964 15.602 16.3715 11.9999C16.2964 8.39791 14.9156 4.94576 12.4858 2.28564M12.4858 21.7142C10.056 19.0541 8.6751 15.602 8.60006 11.9999C8.6751 8.39791 10.056 4.94576 12.4858 2.28564M2.77148 11.9999C2.77148 6.63488 7.12072 2.28564 12.4858 2.28564"
+                                    stroke="#D9D9D9" stroke-width="1.45714" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="text-globe">VI</div>
+                        </button>
+                    </div>
+                    <button type="button" class="in-menu-top-right">
+                        <div class="text-menu-top-right">Đóng</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 24" fill="none">
+                            <path
+                                d="M12.2 21.25C7.08995 21.25 2.94995 17.11 2.94995 12C2.94995 6.89 7.08995 2.75 12.2 2.75C17.31 2.75 21.45 6.89 21.45 12C21.45 17.11 17.31 21.25 12.2 21.25Z"
+                                stroke="#D9D9D9" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.0894 10.0801L10.3093 13.9201" stroke="#D9D9D9" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M10.3093 10.0801L14.0894 13.9201" stroke="#D9D9D9" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="box-menu-bottom">
+                <div class="text-bottom">
+                    <div class="line-menu"></div>
+                    <a href="#" class="page">Trang chủ</a>
+                </div>
+                <div class="box-menu-dark">
+                    <div class="text-bottom">
+                        <div class="line-menu"></div>
+                        <a href="#" class="page">Về chúng tôi</a>
+                    </div>
+                    <div class="box-menu-about-us">
+                        <a href="#" class="text-about">Tổng quan</a>
+                        <a href="#" class="text-about">Lịch sử phát triển & Giải thưởng</a>
+                    </div>
+                </div>
+                <div class="box-menu-dark">
+                    <div class="text-bottom">
+                        <div class="line-menu"></div>
+                        <a href="#" class="page">Cho thuê</a>
+                    </div>
+                    <div class="box-menu-dark">
+                        <a href="#" class="text-about">Văn phòng</a>
+                        <a href="#" class="text-about">Trung tâm thương mại</a>
+                        <a href="#" class="text-about">Khu công nghiệp</a>
+                        <a href="#" class="text-about">Tiện ích bất động sản</a>
+                    </div>
+                </div>
+                <div class="text-bottom">
+                    <div class="line-menu"></div>
+                    <a href="#" class="page">Dịch vụ cho chủ đầu tư</a>
+                </div>
+                <div class="text-bottom">
+                    <div class="line-menu"></div>
+                    <a href="#" class="page">Tin tức</a>
+                </div>
+                <div class="text-bottom">
+                    <div class="line-menu"></div>
+                    <a href="#" class="page">Tuyển dụng</a>
+                </div>
+                <div class="text-bottom">
+                    <div class="line-menu"></div>
+                    <a href="#" class="page">Liên hệ</a>
+                </div>
+                <div class="form-login">
+                    <div class="line-login"></div>
+                    <button type="button" class="box-login">
+                        <div class="in-box-login">
+                            <div class="icon-user">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.2859 12.8882C13.6501 12.8882 14.7559 11.7824 14.7559 10.4182C14.7559 9.0541 13.6501 7.94824 12.2859 7.94824C10.9218 7.94824 9.81592 9.0541 9.81592 10.4182C9.81592 11.7824 10.9218 12.8882 12.2859 12.8882Z"
+                                        stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M7.30591 19.7181V18.3081C7.30591 16.6681 8.6359 15.3481 10.2659 15.3481H14.6959C16.3359 15.3481 17.6559 16.6781 17.6559 18.3081V19.7181"
+                                        stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12.4856 21.6782C17.5942 21.6782 21.7356 17.5369 21.7356 12.4282C21.7356 7.31959 17.5942 3.17822 12.4856 3.17822C7.37696 3.17822 3.2356 7.31959 3.2356 12.4282C3.2356 17.5369 7.37696 21.6782 12.4856 21.6782Z"
+                                        stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="text-login">Đăng nhập cho môi giới</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
